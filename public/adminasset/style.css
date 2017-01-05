@@ -1,0 +1,13 @@
+header{
+	background: #ccc;
+	overflow: hidden;
+
+}
+.logo a img{
+	width:70px;
+	height: auto;
+}
+.login {
+    float: right;
+    margin-top: 3%;
+}
