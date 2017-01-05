@@ -36,4 +36,9 @@ Route::group(['prefix' => 'admin'], function() {
           return view('admin.bantin.them');
       });
     });
+    Route::group(['prefix' => 'quanlyanh'], function() {
+        Route::any('anh', function() {
+            return view('admin.anh.quanlyanh');
+        });
+    });
 });
