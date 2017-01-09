@@ -1,4 +1,6 @@
 <?php
+
+
 if (session_id() == '') session_start();
 
 mb_internal_encoding('UTF-8');
@@ -58,7 +60,7 @@ $config = array(
 	| without final / (DON'T TOUCH)
 	|
 	*/
-	'base_url' => ((isset($_SERVER['HTTPS']) && $_SERVER['HTTPS'] && ! in_array(strtolower($_SERVER['HTTPS']), array( 'off', 'no' ))) ? 'https' : 'http') . '://' . $_SERVER['HTTP_HOST'].'/lar/public',
+	'base_url' => ((isset($_SERVER['HTTPS']) && $_SERVER['HTTPS'] && ! in_array(strtolower($_SERVER['HTTPS']), array( 'off', 'no' ))) ? 'https' : 'http') . '://' . $_SERVER['HTTP_HOST'].'/laravel/public',
 
 	/*
 	|--------------------------------------------------------------------------
