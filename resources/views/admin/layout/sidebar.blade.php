@@ -17,16 +17,23 @@
 	   						
 	   						
 	   						<ul class="nav navbar-nav navbar-left">
-	   							<li><a href="#">Link</a></li>
+	   							<li class="dropdown">
+	   								<a href="#" class="dropdown-toggle" data-toggle="dropdown">Thể loại <b class="caret"></b></a>
+	   								<ul class="dropdown-menu">
+	   									<li><a href="<?php echo URL::to('/') ?>/admin/theloai/them">thêm loai tin</a></li>
+	   									<li><a href="<?php echo URL::to('/') ?>/admin/theloai/danhsach">danhsach</a></li>
+	   									
+	   								</ul>
+	   							</li>
 	   							<li class="dropdown">
 	   								<a href="#" class="dropdown-toggle" data-toggle="dropdown">Loai Tin <b class="caret"></b></a>
 	   								<ul class="dropdown-menu">
 	   									<li><a href="<?php echo URL::to('/') ?>/admin/loaitin/them">thêm loai tin</a></li>
 	   									<li><a href="<?php echo URL::to('/') ?>/admin/loaitin/danhsach">danhsach</a></li>
-	   									<li><a href="#">Something else here</a></li>
-	   									<li><a href="#">Separated link</a></li>
+	   									
 	   								</ul>
 	   							</li>
+	   							
 	   							<li class="dropdown">
 	   								<a href="#" class="dropdown-toggle" data-toggle="dropdown">Dropdown <b class="caret"></b></a>
 	   								<ul class="dropdown-menu">

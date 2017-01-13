@@ -18,6 +18,7 @@ Route::get('admin', function () {
     return view('admin.layout.master');
 });
 
+
 Route::group(['prefix' => 'admin'], function() {
     Route::group(['prefix' => 'loaitin'], function() {
 
@@ -30,6 +31,20 @@ Route::group(['prefix' => 'admin'], function() {
         Route::post('sua/{id}','LoaitinController@postsua' );
         // xoa
         Route::get('xoa/{id}','LoaitinController@getxoa');
+    });
+    Route::group(['prefix' => 'theloai'], function() {
+        // Danh sách
+        Route::get('danhsach','TheLoaiController@danhsach'); 
+        // thêm
+        Route::get('them', 'TheLoaiController@them');
+        Route::post('them','TheLoaiController@posttheloai');
+        // sửa
+        Route::get('sua/{id}','TheLoaiController@sua');
+        Route::post('sua/{id}','TheLoaiController@postsua');
+        // xóa
+        Route::get('xoa/{Matl}','TheLoaiController@xoatheloai' );
+
+
     });
     Route::group(['prefix' => 'bantin'], function() {
       Route::get('them', function() {
